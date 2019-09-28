@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ajisaputrars.madesubmission2">
-
     <uses-permission android:name="android.permission.INTERNET" />
+    <permission android:name="com.example.ajisaputrars.madesubmission2.READ_DATABASE" android:protectionLevel="normal" />
+    <permission android:name="com.example.ajisaputrars.madesubmission2.WRITE_DATABASE" android:protectionLevel="normal" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:authorities="com.example.ajisaputrars.madesubmission2"
+            android:name=".MovieProvider"
+            android:exported="true"
+            android:readPermission="com.example.ajisaputrars.madesubmission2.READ_DATABASE"
+            android:writePermission="com.example.ajisaputrars.madesubmission2.WRITE_DATABASE" />
     </application>
 
 </manifest>
