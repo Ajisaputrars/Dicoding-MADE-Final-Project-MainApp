@@ -6,4 +6,6 @@ public class Constant {
     public static final String URL_MOVIE_AND_TV_SHOW_BASE = "https://api.themoviedb.org/3/";
     public static final String URL_MOVIE_DISCOVER = "discover/movie";
     public static final String URL_TV_SHOW_DISCOVER = "discover/tv";
+    public static final String URL_MOVIE_SEARCH = "search/movie";
+    public static final String URL_TV_SHOW_SEARCH = "search/tv";
 }

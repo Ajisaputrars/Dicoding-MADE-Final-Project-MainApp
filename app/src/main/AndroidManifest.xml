@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ajisaputrars.madesubmission2">
+
     <uses-permission android:name="android.permission.INTERNET" />
-    <permission android:name="com.example.ajisaputrars.madesubmission2.READ_DATABASE" android:protectionLevel="normal" />
-    <permission android:name="com.example.ajisaputrars.madesubmission2.WRITE_DATABASE" android:protectionLevel="normal" />
+
+    <permission
+        android:name="com.example.ajisaputrars.madesubmission2.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.example.ajisaputrars.madesubmission2.WRITE_DATABASE"
+        android:protectionLevel="normal" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SearchTvShowActivity"></activity>
+        <activity android:name=".SearchMovieActivity" />
         <activity android:name=".TvShowDetailActivity" />
         <activity android:name=".MovieDetailActivity" />
         <activity
@@ -25,8 +33,8 @@
         </activity>
 
         <provider
-            android:authorities="com.example.ajisaputrars.madesubmission2"
             android:name=".MovieProvider"
+            android:authorities="com.example.ajisaputrars.madesubmission2"
             android:exported="true"
             android:readPermission="com.example.ajisaputrars.madesubmission2.READ_DATABASE"
             android:writePermission="com.example.ajisaputrars.madesubmission2.WRITE_DATABASE" />

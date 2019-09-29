@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private FragmentManager fragmentManager;
@@ -142,9 +143,21 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_change_settings) {
-            Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
-            startActivity(mIntent);
+        switch (item.getItemId()) {
+            case R.id.action_change_settings:
+                Intent changeSettingsIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+                startActivity(changeSettingsIntent);
+                break;
+
+            case R.id.action_search_movie:
+                Intent searchMovieIntent = new Intent(this, SearchMovieActivity.class);
+                startActivity(searchMovieIntent);
+                break;
+
+            case R.id.action_search_tv_show:
+                Intent searchTvShowIntent = new Intent(this, SearchTvShowActivity.class);
+                startActivity(searchTvShowIntent);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

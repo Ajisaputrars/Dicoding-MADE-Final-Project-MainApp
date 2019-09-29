@@ -20,4 +20,6 @@
     <string name="add_favorite">favorite</string>
     <string name="title_favorite_movie">Favorite Movie</string>
     <string name="title_favorite_tv_show">Favorite TV Show</string>
+    <string name="search_movie">Search Movie</string>
+    <string name="search_tv_show">Search TV Show</string>
 </resources>

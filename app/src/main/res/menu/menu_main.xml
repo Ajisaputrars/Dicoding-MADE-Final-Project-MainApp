@@ -5,4 +5,15 @@
         android:id="@+id/action_change_settings"
         android:title="@string/change_language_setting"
         app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_search_movie"
+        android:title="@string/search_movie"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_search_tv_show"
+        android:title="@string/search_tv_show"
+        app:showAsAction="never"/>
+
 </menu>
