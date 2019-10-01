@@ -24,7 +24,6 @@ import java.util.ArrayList;
 public class MovieFragment extends Fragment {
     private ProgressDialog progressDialog;
     private ArrayList<Movie> movies = new ArrayList<>();
-    private MovieViewModel movieViewModel;
     private MovieAdapter adapter;
 
     public MovieFragment() {
@@ -48,7 +47,7 @@ public class MovieFragment extends Fragment {
             progressDialog.dismiss();
         }
 
-        movieViewModel = ViewModelProviders.of(this).get(MovieViewModel.class);
+        MovieViewModel movieViewModel = ViewModelProviders.of(this).get(MovieViewModel.class);
         movieViewModel.getMovies().observe(this, getMovie);
         movieViewModel.setMovies();
 

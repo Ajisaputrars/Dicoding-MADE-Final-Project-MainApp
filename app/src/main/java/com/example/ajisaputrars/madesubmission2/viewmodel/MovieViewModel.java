@@ -4,6 +4,8 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 import android.util.Log;
+
+import com.example.ajisaputrars.madesubmission2.BuildConfig;
 import com.example.ajisaputrars.madesubmission2.Constant;
 import com.example.ajisaputrars.madesubmission2.model.movie.Movie;
 import com.loopj.android.http.AsyncHttpClient;
@@ -17,13 +19,15 @@ public class MovieViewModel extends ViewModel {
     private static final String URL_FULL_MOVIE = Constant.URL_MOVIE_AND_TV_SHOW_BASE
             + Constant.URL_MOVIE_DISCOVER
             + "?api_key="
-            + Constant.API_KEY +
+//            + Constant.API_KEY +
+            + BuildConfig.API_KEY +
             "&language=en-US";
 
     private static final String URL_FILTERED_MOVIE = Constant.URL_MOVIE_AND_TV_SHOW_BASE
             + Constant.URL_MOVIE_SEARCH
             + "?api_key="
-            + Constant.API_KEY +
+//            + Constant.API_KEY +
+            + BuildConfig.API_KEY +
             "&language=en-US&query=";
 
     // https://api.themoviedb.org/3/search/movie?api_key=9351b653885866a95fcef04c4f0c7426&language=en-US&query=Avenger

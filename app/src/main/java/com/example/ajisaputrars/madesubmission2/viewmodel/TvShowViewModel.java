@@ -5,6 +5,7 @@ import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 import android.util.Log;
 
+import com.example.ajisaputrars.madesubmission2.BuildConfig;
 import com.example.ajisaputrars.madesubmission2.Constant;
 import com.example.ajisaputrars.madesubmission2.model.movie.Movie;
 import com.example.ajisaputrars.madesubmission2.model.tvShow.TvShow;
@@ -22,13 +23,15 @@ public class TvShowViewModel extends ViewModel {
     private static final String URLFULL = Constant.URL_MOVIE_AND_TV_SHOW_BASE
             + Constant.URL_TV_SHOW_DISCOVER
             + "?api_key="
-            + Constant.API_KEY +
+//            + Constant.API_KEY +
+            + BuildConfig.API_KEY +
             "&language=en-US";
 
     private static final String URL_FILTERED_TV_SHOW = Constant.URL_MOVIE_AND_TV_SHOW_BASE
             + Constant.URL_TV_SHOW_SEARCH
             + "?api_key="
-            + Constant.API_KEY +
+//            + Constant.API_KEY +
+            + BuildConfig.API_KEY +
             "&language=en-US&query=";
 
     private MutableLiveData<ArrayList<TvShow>> listFilteredTvShows = new MutableLiveData<>();

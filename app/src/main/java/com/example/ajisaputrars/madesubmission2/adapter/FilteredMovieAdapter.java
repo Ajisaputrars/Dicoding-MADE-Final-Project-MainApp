@@ -48,7 +48,7 @@ public class FilteredMovieAdapter extends RecyclerView.Adapter<FilteredMovieAdap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FilteredMovieAdapter.RecycleViewHolder recycleViewHolder, final int i) {
+    public void onBindViewHolder(@NonNull final FilteredMovieAdapter.RecycleViewHolder recycleViewHolder, int i) {
         recycleViewHolder.tvTitle.setText(movies.get(i).getTitle());
         recycleViewHolder.tvOverview.setText(movies.get(i).getOverview());
         Glide.with(context).load(movies.get(i).getPoster_path_string())
@@ -58,7 +58,7 @@ public class FilteredMovieAdapter extends RecyclerView.Adapter<FilteredMovieAdap
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, MovieDetailActivity.class);
-                intent.putExtra(MovieDetailActivity.DETAIL_MOVIE_EXTRA, getMovies().get(i));
+                intent.putExtra(MovieDetailActivity.DETAIL_MOVIE_EXTRA, getMovies().get(recycleViewHolder.getAdapterPosition()));
                 context.startActivity(intent);
             }
         });

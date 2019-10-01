@@ -46,7 +46,7 @@ public class FavoriteTvShowAdapter extends RecyclerView.Adapter<FavoriteTvShowAd
         return new FavoriteTvShowAdapter.RecycleViewHolder(view);    }
 
     @Override
-    public void onBindViewHolder(@NonNull RecycleViewHolder recycleViewHolder, final int i) {
+    public void onBindViewHolder(@NonNull final RecycleViewHolder recycleViewHolder, int i) {
         recycleViewHolder.tvTitle.setText(tvShows.get(i).getName());
         recycleViewHolder.tvOverview.setText(tvShows.get(i).getOverview());
         Glide.with(context).load(tvShows.get(i).getPoster_path_string())
@@ -56,7 +56,7 @@ public class FavoriteTvShowAdapter extends RecyclerView.Adapter<FavoriteTvShowAd
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, TvShowDetailActivity.class);
-                intent.putExtra(TvShowDetailActivity.DETAIL_TV_SHOW_EXTRA, getMovies().get(i));
+                intent.putExtra(TvShowDetailActivity.DETAIL_TV_SHOW_EXTRA, getMovies().get(recycleViewHolder.getAdapterPosition()));
                 context.startActivity(intent);
             }
         });
