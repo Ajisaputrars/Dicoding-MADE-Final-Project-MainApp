@@ -11,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private FragmentManager fragmentManager;
@@ -144,9 +143,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_change_settings:
-                Intent changeSettingsIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
-                startActivity(changeSettingsIntent);
+            case R.id.action_language_settings:
+                Intent changeLanguageSettingIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+                startActivity(changeLanguageSettingIntent);
                 break;
 
             case R.id.action_search_movie:
@@ -157,6 +156,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_search_tv_show:
                 Intent searchTvShowIntent = new Intent(this, SearchTvShowActivity.class);
                 startActivity(searchTvShowIntent);
+                break;
+            case R.id.action_reminder_setting:
+                Intent reminderSettingIntent = new Intent(this, SettingNotificationActivity.class);
+                startActivity(reminderSettingIntent);
                 break;
         }
         return super.onOptionsItemSelected(item);

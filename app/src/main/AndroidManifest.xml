@@ -18,7 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SearchTvShowActivity"></activity>
+        <activity android:name=".SettingNotificationActivity"></activity>
+        <activity android:name=".SearchTvShowActivity" />
         <activity android:name=".SearchMovieActivity" />
         <activity android:name=".TvShowDetailActivity" />
         <activity android:name=".MovieDetailActivity" />
