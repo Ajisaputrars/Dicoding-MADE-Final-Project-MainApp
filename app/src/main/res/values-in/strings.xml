@@ -22,4 +22,11 @@
     <string name="release_today_reminder_setting">Pengaturan Pengingat Rilis Hari Ini (Release Today)</string>
     <string name="daily_reminder_setting">Pengaturan Pengingat Harian</string>
     <string name="reminder_setting">Pengaturan Pengingat</string>
+    <string name="daily_reminder_text">Ayo kembali ke aplikasi lagi</string>
+
+    <string name="switch_daily_reminder_on_text">Daily Reminder dinyalakan</string>
+    <string name="switch_daily_reminder_off_text">Daily Reminder dimatikan</string>
+
+    <string name="switch_release_today_reminder_on_text">Release Today Reminder dinyalakan</string>
+    <string name="switch_release_today_reminder_off_text">DRelease Today Reminder dimatikan</string>
 </resources>

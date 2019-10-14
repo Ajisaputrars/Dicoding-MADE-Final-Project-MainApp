@@ -11,10 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.ajisaputrars.madesubmission2.MovieDetailActivity;
 import com.example.ajisaputrars.madesubmission2.R;
 import com.example.ajisaputrars.madesubmission2.TvShowDetailActivity;
-import com.example.ajisaputrars.madesubmission2.model.movie.Movie;
 import com.example.ajisaputrars.madesubmission2.model.tvShow.TvShow;
 
 import java.util.ArrayList;

@@ -22,4 +22,15 @@
     <string name="release_today_reminder_setting">Release Today Reminder Setting</string>
     <string name="daily_reminder_setting">Daily Reminder Setting</string>
     <string name="reminder_setting">Reminder Setting</string>
+    <string name="daily_reminder_text">Lets come back to the app</string>
+
+    <string name="switch_daily_reminder_on_text">Daily Reminder has been turned on</string>
+    <string name="switch_daily_reminder_off_text">Daily Reminder has been turned off</string>
+
+    <string name="switch_release_today_reminder_on_text">Release Today Reminder has been turned on</string>
+    <string name="switch_release_today_reminder_off_text">DRelease Today Reminder has been turned on</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+
 </resources>

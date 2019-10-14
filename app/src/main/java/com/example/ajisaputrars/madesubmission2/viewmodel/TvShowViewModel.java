@@ -7,7 +7,6 @@ import android.util.Log;
 
 import com.example.ajisaputrars.madesubmission2.BuildConfig;
 import com.example.ajisaputrars.madesubmission2.Constant;
-import com.example.ajisaputrars.madesubmission2.model.movie.Movie;
 import com.example.ajisaputrars.madesubmission2.model.tvShow.TvShow;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
